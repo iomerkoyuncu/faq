@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  color: #fff;
+  background-color: darkblue;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container
+{
+  width: 600px;
+}
+
+.container h1
+{
+  text-align: center;
+}
+
+.question
+{
+  border: #fff solid 1px;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  padding-left: 20px;
+  height: 75px;
+  position: relative;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+
+.question.active
+{
+  height: 150px;
+  color: #fff; 
+  transition: 1s ease;
+}
+
+.question.active .answer
+{
+  visibility: visible;
+  position: absolute;
+  left: 4%;
+  bottom: 25%;
+  transition: 1s ease;
+}
+
+.question .answer
+{
+  visibility: hidden;
+  transition: 1s ease;
+}
+
+
